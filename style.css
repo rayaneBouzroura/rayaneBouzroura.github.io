@@ -1,5 +1,5 @@
 body {
-    background-color: #ffc0cb;
+    background-color:aqua;
     font-family: "Comic Sans MS", cursive, sans-serif;
     text-align: center;
   }
@@ -12,6 +12,15 @@ body {
   }
 
   .btnSubmit {
+    background-color: #f00;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 24px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .btnChangeStyle {
     background-color: #f00;
     color: #fff;
     padding: 5px 10px;
