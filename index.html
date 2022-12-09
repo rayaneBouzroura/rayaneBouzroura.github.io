@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+    <script type="text/javascript" src="script.js"></script>
     <style>
       body {
         background-color: #ffc0cb;
@@ -15,7 +17,7 @@
         margin: 10px;
       }
 
-      button {
+      .btnSubmit {
         background-color: #f00;
         color: #fff;
         padding: 5px 10px;
@@ -26,38 +28,14 @@
       }
     </style>
   </head>
+
   <body>
     <h1>UWUify Your Text!</h1>
     <input type="text" id="input" placeholder="Enter your text here..." />
-    <button onclick="uwuify()">UWUify!</button>
+    <button class="btnSubmit" onclick="uwuify()">UWUify!</button>
     <p id="output"></p>
 
-    <script>
-      function uwuify() {
-  // Get the user's input
-  let input = document.getElementById("input").value;
-
-  // UWUify the input
-  let output = input
-    .replace(/[rl]/g, "w")
-    .replace(/[RL]/g, "W")
-    .replace(/th/g, "d")
-    .replace(/TH/g, "D")
-    .replace(/the/g, "teh")
-    .replace(/THE/g, "TEH")
-    .replace(/you/g, "uwu")
-    .replace(/YOU/g, "UWU")
-    .replace(/I/g, "I'm")
-    .replace(/i/g, "i'm")
-    .replace(/my/g, "mai")
-    .replace(/MY/g, "MAI");
-
-  // Add some emojis
-  output += " 💕💞💓💗💖";
-
-  // Display the UWUified text
-  document.getElementById("output").innerHTML = output;
-}
-    </script>
+    
   </body>
+
 </html>
