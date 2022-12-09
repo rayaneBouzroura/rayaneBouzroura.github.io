@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #ffc0cb;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        text-align: center;
+      }
+
+      input {
+        border: 2px solid #f00;
+        padding: 5px;
+        font-size: 24px;
+        margin: 10px;
+      }
+
+      button {
+        background-color: #f00;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 24px;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>UWUify Your Text!</h1>
+    <input type="text" id="input" placeholder="Enter your text here..." />
+    <button onclick="uwuify()">UWUify!</button>
+    <p id="output"></p>
+
+    <script>
+      function uwuify() {
+        // Get the user's input
+        let input = document.getElementById("input").value;
+
+        // UWUify the input
+        let output = input.replace(/[rl]/g, "w").replace(/[RL]/g, "W");
+
+        // Add some emojis
+        output += " 💕💞💓💗💖";
+
+        // Display the UWUified text
+        document.getElementById("output").innerHTML = output;
+      }
+    </script>
+  </body>
+</html>
