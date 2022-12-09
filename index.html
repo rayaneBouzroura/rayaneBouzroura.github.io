@@ -34,18 +34,30 @@
 
     <script>
       function uwuify() {
-        // Get the user's input
-        let input = document.getElementById("input").value;
+  // Get the user's input
+  let input = document.getElementById("input").value;
 
-        // UWUify the input
-        let output = input.replace(/[rl]/g, "w").replace(/[RL]/g, "W");
+  // UWUify the input
+  let output = input
+    .replace(/[rl]/g, "w")
+    .replace(/[RL]/g, "W")
+    .replace(/th/g, "d")
+    .replace(/TH/g, "D")
+    .replace(/the/g, "teh")
+    .replace(/THE/g, "TEH")
+    .replace(/you/g, "uwu")
+    .replace(/YOU/g, "UWU")
+    .replace(/I/g, "I'm")
+    .replace(/i/g, "i'm")
+    .replace(/my/g, "mai")
+    .replace(/MY/g, "MAI");
 
-        // Add some emojis
-        output += " 💕💞💓💗💖";
+  // Add some emojis
+  output += " 💕💞💓💗💖";
 
-        // Display the UWUified text
-        document.getElementById("output").innerHTML = output;
-      }
+  // Display the UWUified text
+  document.getElementById("output").innerHTML = output;
+}
     </script>
   </body>
 </html>
