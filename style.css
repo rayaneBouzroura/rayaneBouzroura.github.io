@@ -1,5 +1,5 @@
 body {
-    background-color:aqua;
+    background-color: #ffc0cb;
     font-family: "Comic Sans MS", cursive, sans-serif;
     text-align: center;
   }
@@ -19,6 +19,7 @@ body {
     margin: 10px;
     border: none;
     cursor: pointer;
+<<<<<<< HEAD
   }
   .btnChangeStyle {
     background-color: #f00;
@@ -29,4 +30,6 @@ body {
     border: none;
     cursor: pointer;
     font-size: smaller;
+=======
+>>>>>>> parent of ba03e58... style change , added a button that doesnt work. woohoo
   }
