@@ -21,17 +21,17 @@ function uwuify() {
     // Randomize the addition of "uwu" to the end of each word
     let wordsUwu = output.split(" ");
     for (let i = 0; i < wordsUwu.length; i++) {
-        if (Math.random() > 0.5) {
+        if (Math.random() > 0.85) {
             wordsUwu[i] += "uwu";
         }
     }
     output = wordsUwu.join(" ");
 
     // Add some emojis
-    let emojis = [, "💗", "😂", "🙄", "🤐", "😏", "😱", "😫", "😙", "😚", "(っ◕‿◕)っ", "(ง •̀_•́)ง"];
+    let emojis = [, "💗", "😂", "🙄", "🤐", "😏", "😱", "😫", "😙", "😚", "(っ◕‿◕)っ", "(ง •̀_•́)ง","^_^","ಠ_ಠ","(●'◡'●)"];
     let words = output.split(" ");
     for (let i = 0; i < words.length; i++) {
-        if (Math.random() > 0.5) {
+        if (Math.random() > 0.78) {
             words[i] += emojis[Math.floor(Math.random() * emojis.length)];
         }
     }
