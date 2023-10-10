@@ -63,7 +63,7 @@ function checkEasterEgg(input) {
         case 'andro':
             return "La3ziz Elghali";
         case 'shamy':
-            return "Do you mean.... Samy? hehehehehe (sorry pls dont come to my house and shit on my lawn)";
+            return 'Musicien de oof de la mort qui tue <a href="https://open.spotify.com/artist/3aWoohjtzcdzaQQr0jOylx" target="_blank">follow him</a> or I\'ll follow you home and do stuff to your car';
         default:
             return input;  // Return the original input if there's no match
     }
@@ -71,6 +71,11 @@ function checkEasterEgg(input) {
 
 function applyEffect(effect) {
     let input = document.getElementById("input").value;
+    let easterEggOutput = checkEasterEgg(input);
+    if (easterEggOutput !== input) {  // An Easter egg was found
+        document.getElementById("output").innerHTML = easterEggOutput;
+        return;  // Return early to bypass text transformation
+    }
     input = checkEasterEgg(input);
     let output;
     switch(effect) {
@@ -216,4 +221,18 @@ function switchStyle() {
 function resetText() {
     document.getElementById("input").value = '';
     document.getElementById("output").innerHTML = '';
+}
+
+
+function checkEasterEgg(input) {
+    switch(input.toLowerCase()) {
+        case 'liloush':
+            return "Oh lord she stinks";
+        case 'andro':
+            return "La3ziz Elghali";
+        case 'shamy':
+            return 'Musicien de oof de la mort qui tue <a href="https://open.spotify.com/artist/3aWoohjtzcdzaQQr0jOylx" target="_blank">follow him</a> or I\'ll follow you home and do stuff to your car';
+        default:
+            return input;  // Return the original input if there's no match
+    }
 }
