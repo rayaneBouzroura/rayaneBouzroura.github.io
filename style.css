@@ -19,7 +19,6 @@ body {
     margin: 10px;
     border: none;
     cursor: pointer;
-<<<<<<< HEAD
   }
   .btnChangeStyle {
     background-color: #f00;
@@ -30,6 +29,17 @@ body {
     border: none;
     cursor: pointer;
     font-size: smaller;
-=======
->>>>>>> parent of ba03e58... style change , added a button that doesnt work. woohoo
   }
+
+  #output {
+    transition: all 0.3s ease-in-out;
+}
+
+/* After a button is clicked, add a class to the output element */
+.btnSubmit:active ~ #output {
+    transform: scale(1.05);
+}
+
+body, * {
+  transition: all 0s ease-in-out;
+}
