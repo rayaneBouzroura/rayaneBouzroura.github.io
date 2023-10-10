@@ -57,10 +57,16 @@ function cringify(input) {
 }
 
 function checkEasterEgg(input) {
-    if (input.toLowerCase() === "liloush") {
-        return "Oh lord she stinks";
+    switch(input.toLowerCase()) {
+        case 'liloush':
+            return "Oh lord she stinks";
+        case 'andro':
+            return "La3ziz Elghali";
+        case 'shamy':
+            return "Do you mean.... Samy? hehehehehe (sorry pls dont come to my house and shit on my lawn)";
+        default:
+            return input;  // Return the original input if there's no match
     }
-    return input;
 }
 
 function applyEffect(effect) {
