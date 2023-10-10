@@ -191,6 +191,21 @@ function cursePage() {
     }, 10000);
 }
 
+// Add this array of colors to your script.js
+const colors = ['#FFC0CB', '#FFD700', '#FF6347', '#8A2BE2', '#20B2AA', '#00FA9A', '#8B4513', '#2E8B57'];
+
+// Add this array of fonts to your script.js
+const fonts = ['"Comic Sans MS", cursive, sans-serif', '"Arial", sans-serif', '"Courier New", monospace', '"Georgia", serif', '"Times New Roman", Times, serif', '"Verdana", sans-serif'];
+
+function getRandomArrayElement(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function switchStyle() {
+    document.body.style.backgroundColor = getRandomArrayElement(colors);
+    document.body.style.fontFamily = getRandomArrayElement(fonts);
+}
+
 
 function resetText() {
     document.getElementById("input").value = '';
